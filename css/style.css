@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-grey: #48555b;
+  --color-blue-text: #16ace8;
+  --color-blue-btn: #00a4e5;
+  --color-backgroun-white: #f2f2f2;
+  --color-backgroun-dark: #171819;
+  --color-backgroun-blue-dark: #141a20;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-content {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.text-h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: 2.30625px;
+  color: var(--color-grey);
+  text-transform: uppercase;
+}
+
+.text-p {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+.story {
+  padding: 50px 0 120px 0;
+}
+
+.story__h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.story__h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-blue-text);
+  display: block;
+  margin: 10px auto 0;
+}
+
+.story__inner {
+  display: flex;
+}
+
+.strory__left {
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+.story__h3 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.story__h3 span {
+  color: var(--color-blue-text);
+}
+
+.story__right {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.story__right-item {
+  font-size: 24px;
+  color: var(--color-white);
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 140px;
+  height: 224px;
+  padding: 15px;
+}
+
+.story__right-item:nth-child(1) {
+  background-image: url(../img/our_story_1_img.png);
+}
+.story__right-item:nth-child(2) {
+  background-image: url(../img/our_story_2_img.png);
+}
+.story__right-item:nth-child(3) {
+  background-image: url(../img/our_story_3_img.png);
+}
+
+@media screen and (max-width: 1024px) {
+  .container-content {
+    padding: 0 20px;
+  }
+  .story__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .strory__left {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .story__right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
