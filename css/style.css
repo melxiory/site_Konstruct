@@ -450,6 +450,7 @@ body {
 }
 
 .footer__content-column-social a{
+  text-decoration: none;
   color: inherit;
 }
 
