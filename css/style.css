@@ -391,8 +391,6 @@ body {
   padding-bottom: 40px;
 }
 
-.footer__content-column-company {
-}
 
 .footer__img {
   margin-bottom: 15px;
@@ -449,6 +447,10 @@ body {
   gap: 30px;
   color: var(--color-white);
   font-size: 14px;
+}
+
+.footer__content-column-social a{
+  color: inherit;
 }
 
 .footer__bottom {
